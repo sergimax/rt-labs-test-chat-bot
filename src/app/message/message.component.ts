@@ -12,10 +12,4 @@ import { NgClass, NgIf } from '@angular/common';
 export class MessageComponent {
   @Input({required: true}) messageText = "";
   @Input({required: true}) isMessageFromBot = true;
-
-  // constructor(){
-  //   if (this.isMessageFromBot) {
-  //     Attr.ba
-  //   }
-  // }
 }

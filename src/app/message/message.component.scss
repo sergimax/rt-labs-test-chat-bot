@@ -7,7 +7,6 @@
 }
 
 .message-text {
-  height: 55px;
   width: 55px;
 
   padding-left: 18px;
@@ -15,8 +14,9 @@
 
   border-radius: 8px;
 
+  padding: 16px;
+
   &__bot {
-    color: red;
     background-color: lightgray;
 
     margin-left: 8px;

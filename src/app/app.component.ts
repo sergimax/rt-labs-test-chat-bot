@@ -22,15 +22,5 @@ interface ICommands {
 })
 export class AppComponent {
   title = 'rt-labs-test-chat-bot';
-  constructor() {
-    this.preloadMessages();
-  }
-  preloadMessages = async () => {
-    try {
-      let messagesData: ICommands = await data;
-      console.log('messagesData', messagesData);
-    } catch (e) {
-      console.error(e);
-    }
-  };
+  messagesData: ICommands = data;
 }
