@@ -1,0 +1,14 @@
+<div class="message">
+  <avatar *ngIf="isMessageFromBot"></avatar>
+  <div
+    class="message-text"
+    [ngClass]="{
+      'message-text__bot': isMessageFromBot,
+      'message-text__user': !isMessageFromBot
+    }"
+    [attr.data-test-id]="isMessageFromBot ? 'bot-message' : 'user-message'"
+  >
+    {{ messageText }}
+  </div>
+  <avatar *ngIf="!isMessageFromBot"></avatar>
+</div>

@@ -1,0 +1,37 @@
+.message {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  margin: 10px;
+}
+
+.message-text {
+  height: 55px;
+  width: 55px;
+
+  padding-left: 18px;
+  padding-right: 18px;
+
+  border-radius: 8px;
+
+  &__bot {
+    color: red;
+    background-color: lightgray;
+
+    margin-left: 8px;
+    margin-right: auto;
+
+    width: fit-content;
+  }
+
+  &__user {
+    color: white;
+    background-color: black;
+
+    margin-left: auto;
+    margin-right: 8px;
+
+    width: fit-content;
+  }
+}
