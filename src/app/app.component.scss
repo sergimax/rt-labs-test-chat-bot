@@ -1,0 +1,65 @@
+.main {
+    background-color: beige;
+
+    max-width: 450px;
+    height: max(80vh, 700px) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .header {
+        font-weight: 600;
+    
+        border: 1px solid lightgrey;
+    }
+
+    .message-area {
+        height: 100%;
+    
+        .message {}
+
+        .message-avatar {}
+
+        .message-text {
+            height: 55px;
+            width: 55px;
+
+            padding-left: 18px;
+            padding-right: 18px;
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            border-radius: 8px;
+
+            &__bot {
+                color: red;
+                background-color: lightgray;
+
+                
+                margin-left: 8px;
+                margin-right: auto;
+
+                width: fit-content;
+            }
+    
+            &__user {
+                color: white;
+                background-color: black;
+
+                margin-left: auto;
+                margin-right: 8px;
+
+
+
+
+                width: fit-content;
+            }
+        }
+    }
+
+    .command-block {
+        border: 1px solid lightgrey;
+    }
+}

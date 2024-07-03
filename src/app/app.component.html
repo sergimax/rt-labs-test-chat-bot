@@ -1,6 +1,32 @@
+<!-- 
+Поле ввода сообщений chat-input
+Кнопка отправки send-button
+Область сообщений message-area
+Сообщение пользователя user-message
+Сообщение бота bot-message
+-->
+
 <main class="main">
-  hello there!
-  <br>
-  Чат-бот {{title}}
+  <div class="header">Чат-бот</div>
+  <div class="message-area" data-test-id="message-area">
+    <div class="message" data-test-id="bot-message">
+      <div class="message-avatar"></div>
+      <div class="message-text message-text__bot">
+        Привет, чем могу помочь?
+      </div>
+    </div>
+    
+
+    <div class="message" data-test-id="user-message">
+      <div class="message-avatar"></div>
+      <div class="message-text message-text__user" 
+      >ничем</div>
+    </div>
+    
+  </div>
+  <div class="command-block">
+    <input type="text" data-test-id="chat-input" placeholder="Команда" />
+    <button data-test-id="send-button">➤</button>
+  </div>
 </main>
 <router-outlet />
