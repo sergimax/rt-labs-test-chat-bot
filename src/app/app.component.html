@@ -12,9 +12,6 @@
     <app-message [messageText]="messagesData.commands[0].response" [isMessageFromBot]="true"></app-message>
     <app-message messageText="ничем" [isMessageFromBot]="false"></app-message>
   </div>
-  <div class="command-block">
-    <input type="text" data-test-id="chat-input" placeholder="Команда" />
-    <button data-test-id="send-button">➤</button>
-  </div>
+  <app-chat-input></app-chat-input>
 </main>
 <router-outlet />
