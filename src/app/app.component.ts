@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {AvatarComponent} from "./avatar/avatar.component"
 import {MessageComponent} from "./message/message.component"
+import {HeaderComponent} from "./header/header.component"
 import * as data from '../messages.mock.json';
 
 interface ICommands {
@@ -16,7 +17,7 @@ interface ICommands {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, AvatarComponent, MessageComponent],
+  imports: [RouterOutlet, AvatarComponent, MessageComponent, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
