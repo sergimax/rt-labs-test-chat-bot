@@ -1,0 +1,16 @@
+.header {
+  font-weight: 600;
+
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding-left: 18px;
+
+  border-bottom: 1px solid lightgrey;
+
+  &__title {
+    padding-left: 16px;
+  }
+}
