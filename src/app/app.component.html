@@ -9,7 +9,7 @@
 <main class="main">
   <div class="header">Чат-бот</div>
   <div class="message-area" data-test-id="message-area">
-    <app-message messageText="hello" [isMessageFromBot]="true"></app-message>
+    <app-message [messageText]="messagesData.commands[0].response" [isMessageFromBot]="true"></app-message>
     <app-message messageText="ничем" [isMessageFromBot]="false"></app-message>
   </div>
   <div class="command-block">
