@@ -9,20 +9,8 @@
 <main class="main">
   <div class="header">Чат-бот</div>
   <div class="message-area" data-test-id="message-area">
-    <div class="message" data-test-id="bot-message">
-      <div class="message-avatar"></div>
-      <div class="message-text message-text__bot">
-        Привет, чем могу помочь?
-      </div>
-    </div>
-    
-
-    <div class="message" data-test-id="user-message">
-      <div class="message-avatar"></div>
-      <div class="message-text message-text__user" 
-      >ничем</div>
-    </div>
-    
+    <app-message messageText="hello" [isMessageFromBot]="true"></app-message>
+    <app-message messageText="ничем" [isMessageFromBot]="false"></app-message>
   </div>
   <div class="command-block">
     <input type="text" data-test-id="chat-input" placeholder="Команда" />
